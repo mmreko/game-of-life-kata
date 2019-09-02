@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "tcr": "(npm test && git commit -am '') || git revert"
   },
   "author": "",
   "license": "ISC",
