@@ -1,11 +1,10 @@
 const assert = require('assert');
 
 const generateBoard = (height, width) => {
-    var board =  new Array(height);
-    for(var i = 0; i < board.length; i++)
+    const board =  new Array(height);
+    for(let i = 0; i < board.length; i++)
     {
-        var temp = new Array(width);
-        board[i] = temp.fill(0);
+        board[i] = new Array(width).fill(0);
     }
     return board;
 }
